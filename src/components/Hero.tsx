@@ -2,12 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-import InputLabel from "@mui/material/InputLabel";
 import Stack from "@mui/material/Stack";
-import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-
-import { visuallyHidden } from "@mui/utils";
 
 export default function Hero() {
   return (
@@ -18,10 +14,10 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
         backgroundColor: "Background",
         backgroundImage:
-          "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)",
+          "radial-gradient(ellipse 80% 100% at 50% -20%, hsl(210, 100%, 90%), transparent)",
         ...theme.applyStyles("dark", {
           backgroundImage:
-            "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)",
+            "radial-gradient(ellipse 80% 100% at 50% -20%, hsl(210, 100%, 16%), transparent)",
         }),
       })}
     >
@@ -46,7 +42,7 @@ export default function Hero() {
               flexDirection: { xs: "column", sm: "row" },
               alignItems: "center",
               fontSize: "clamp(3rem, 10vw, 3.5rem)",
-              color: "primary.main",
+              color: "secondary.main",
             }}
           >
             <Typography
@@ -84,41 +80,20 @@ export default function Hero() {
             }}
           >
             Non-profit organization focused on getting girls all over Utah
-            involved in baseball
+            involved in baseball.
+            <br />
+            Show 'em what it really means to play ball like a girl!
           </Typography>
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={1}
-            useFlexGap
-            sx={{ pt: 2, width: { xs: "100%", sm: "425px" } }}
+
+          <Button
+            href="https://forms.gle/HcJWpNe8WtLzkaFC7"
+            target="_blank"
+            variant="contained"
+            size="large"
+            color="secondary"
           >
-            <InputLabel htmlFor="email-hero" sx={visuallyHidden}>
-              Email
-            </InputLabel>
-            <TextField
-              id="email-hero"
-              hiddenLabel
-              size="small"
-              variant="outlined"
-              aria-label="Enter your email address"
-              placeholder="Email address"
-              fullWidth
-              slotProps={{
-                htmlInput: {
-                  autoComplete: "off",
-                  "aria-label": "Enter your email address",
-                },
-              }}
-            />
-            <Button
-              variant="contained"
-              color="primary"
-              size="small"
-              sx={{ minWidth: "fit-content" }}
-            >
-              Join Mailing List
-            </Button>
-          </Stack>
+            Become a Member
+          </Button>
         </Stack>
       </Container>
     </Box>

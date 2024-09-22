@@ -10,23 +10,23 @@ import Grid from "@mui/material/Grid2";
 
 const userTestimonials = [
   {
-    avatar: <Avatar alt="Leslie Berg" src="/static/images/avatar/1.jpg" />,
-    name: "Leslie Berg",
-    occupation: "Lehi Resident",
+    avatar: <Avatar alt="Leslie" src="/static/images/avatar/1.jpg" />,
+    name: "Leslie",
+    occupation: "Lehi",
     testimonial:
       "I played baseball when I was younger until they made us move to softball. I still prefer baseball in a lot of ways. I've been looking for coaching to improve my game.",
   },
   {
-    avatar: <Avatar alt="Adrienne Howard" src="/static/images/avatar/2.jpg" />,
-    name: "Adrienne Howard",
-    occupation: "Sandy Resident",
+    avatar: <Avatar alt="Adrienne" src="/static/images/avatar/2.jpg" />,
+    name: "Adrienne",
+    occupation: "Sandy",
     testimonial:
       "Early stages I guess, but with two older brothers playing baseball we are fired up our daughter will have the chance too! ",
   },
   {
-    avatar: <Avatar alt="Kristina Yamada" src="/static/images/avatar/3.jpg" />,
-    name: "Kristina Yamada",
-    occupation: "Utah State Board of Education",
+    avatar: <Avatar alt="Kristina" src="/static/images/avatar/3.jpg" />,
+    name: "Kristina",
+    occupation: "Salt Lake City",
     testimonial:
       "Good Luck with this!  I hope you are able to create a team at least!  That will be amazing!  I would love to watch!",
   },

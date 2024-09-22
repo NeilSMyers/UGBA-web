@@ -3,11 +3,13 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import AppAppBar from "../components/AppAppBar";
 import Hero from "../components/Hero";
-import Highlights from "../components/Highlights";
-import Pricing from "../components/Pricing";
-import Features from "../components/Features";
+import Ambassador from "../components/Ambassador";
+import Donations from "../components/Donations";
+import OurTeam from "../components/OurTeam";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import FAQ from "../components/FAQ";
+import Timeline from "../components/Timeline";
 
 import { HeadFC, PageProps } from "gatsby";
 
@@ -21,10 +23,12 @@ const IndexPage: React.FC<PageProps> = () => {
       <AppAppBar />
       <Hero />
       <div style={{ backgroundColor: defaultTheme.palette.background.default }}>
-        <Features />
+        <Timeline />
+        <OurTeam />
+        <Ambassador />
         <Testimonials />
-        <Highlights />
-        <Pricing />
+        <Donations />
+        <FAQ />
         <Footer />
       </div>
     </ThemeProvider>

@@ -11,8 +11,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import Sitemark from "./SitemarkIcon";
-import { Image } from "@mui/icons-material";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -28,6 +26,16 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: "8px 12px",
 }));
 
+const linkToForm = "https://forms.gle/HcJWpNe8WtLzkaFC7";
+
+const shortcuts = [
+  { title: "Timeline" },
+  { title: "Our Team" },
+  { title: "Ambassador Program" },
+  { title: "Donations" },
+  { title: "FAQ" },
+];
+
 export default function AppAppBar() {
   const [open, setOpen] = React.useState(false);
 
@@ -42,7 +50,7 @@ export default function AppAppBar() {
         boxShadow: 0,
         bgcolor: "transparent",
         backgroundImage: "none",
-        mt: 5,
+        mt: 3,
       }}
     >
       <Container maxWidth="lg">
@@ -56,48 +64,28 @@ export default function AppAppBar() {
             }}
           >
             <Box sx={{ display: { xs: "none", md: "flex", gap: 25 } }}>
-              <Button variant="text" color="info" size="small">
-                Our Team
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Testimonials
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Timeline
-              </Button>
-              <Button variant="text" color="info" size="small">
-                Ambassador Program
-              </Button>
-              <Button
-                variant="text"
-                color="info"
-                size="small"
-                sx={{ minWidth: 0 }}
-              >
-                FAQ
-              </Button>
+              {shortcuts.map((s) => (
+                <Button
+                  variant="text"
+                  color="info"
+                  size="small"
+                  sx={{ minWidth: 0 }}
+                >
+                  {s.title}
+                </Button>
+              ))}
             </Box>
           </Box>
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              gap: 1,
-              alignItems: "center",
-            }}
+
+          <Button
+            color="success"
+            variant="contained"
+            size="small"
+            sx={{ minWidth: 150 }}
           >
-            <Button
-              color="primary"
-              variant="text"
-              size="small"
-              href="https://forms.gle/CtmFt8TSdpj6wLmD9"
-              target="_blank"
-            >
-              Take the Survey
-            </Button>
-            <Button color="primary" variant="contained" size="small">
-              Donate
-            </Button>
-          </Box>
+            Donate
+          </Button>
+
           <Box sx={{ display: { sm: "flex", md: "none" } }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
@@ -116,24 +104,12 @@ export default function AppAppBar() {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>Our Team</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Timeline</MenuItem>
-                <MenuItem>Ambassador Program</MenuItem>
-                <MenuItem>FAQ</MenuItem>
+                {shortcuts.map((s) => (
+                  <MenuItem>{s.title}</MenuItem>
+                ))}
+
                 <MenuItem>
-                  <Button
-                    color="primary"
-                    variant="outlined"
-                    fullWidth
-                    href="https://forms.gle/CtmFt8TSdpj6wLmD9"
-                    target="_blank"
-                  >
-                    Take the Survey
-                  </Button>
-                </MenuItem>
-                <MenuItem>
-                  <Button color="primary" variant="contained" fullWidth>
+                  <Button color="secondary" variant="contained" fullWidth>
                     Donate
                   </Button>
                 </MenuItem>
