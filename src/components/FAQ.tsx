@@ -23,7 +23,7 @@ export default function FAQ() {
     <Container
       id="faq"
       sx={{
-        py: { xs: 4, sm: 8 },
+        py: { xs: 2, sm: 6 },
         position: "relative",
         display: "flex",
         flexDirection: "column",
@@ -100,8 +100,8 @@ export default function FAQ() {
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
               Absolutely! Email us at <Link> utahgirlsbaseball@gmail.com </Link>{" "}
-              and we'll set up a time for dropoff! We'll use what we can and
-              refurbish what we need.
+              and we'll set up a time for dropoff! <br />
+              <br /> We'll use what we can and refurbish what we need.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -143,6 +143,34 @@ export default function FAQ() {
                   </ListItem>
                 ))}
               </List>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "panel4"}
+          onChange={handleChange("panel4")}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel4d-content"
+            id="panel4d-header"
+          >
+            <Typography component="h3" variant="subtitle1">
+              How can I participate as an adult?
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography
+              variant="body2"
+              gutterBottom
+              sx={{ maxWidth: { sm: "100%", md: "70%" } }}
+            >
+              We only plan on offering playing opportunities for 18U. <br />
+              <br /> However, we will always need women to be coaches and
+              umpires. Your example will be very important to younger girls!
+              <br />
+              <br />
+              Stay tuned for future plans around these ideas.
             </Typography>
           </AccordionDetails>
         </Accordion>

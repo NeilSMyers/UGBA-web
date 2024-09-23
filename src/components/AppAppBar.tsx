@@ -11,6 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { Link } from "@mui/material";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -29,11 +30,11 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 const linkToForm = "https://forms.gle/HcJWpNe8WtLzkaFC7";
 
 const shortcuts = [
-  { title: "Timeline" },
-  { title: "Our Team" },
-  { title: "Ambassador Program" },
-  { title: "Donations" },
-  { title: "FAQ" },
+  { title: "Timeline", href: "#timeline" },
+  { title: "Our Team", href: "#ourteam" },
+  { title: "Ambassador Program", href: "#ambassador" },
+  { title: "Donations", href: "#donations" },
+  { title: "FAQ", href: "#faq" },
 ];
 
 export default function AppAppBar() {
@@ -60,61 +61,60 @@ export default function AppAppBar() {
               flexGrow: 1,
               display: "flex",
               alignItems: "center",
+              justifyContent: "space-between",
               px: 0,
             }}
           >
+            <Box sx={{ display: { sm: "flex", md: "none" } }}>
+              <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
+                <MenuIcon />
+              </IconButton>
+              <Drawer anchor="top" open={open} onClose={toggleDrawer(false)}>
+                <Box sx={{ p: 2, backgroundColor: "background.default" }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <IconButton onClick={toggleDrawer(false)}>
+                      <CloseRoundedIcon />
+                    </IconButton>
+                  </Box>
+                  <Divider sx={{ my: 3 }} />
+                  {shortcuts.map((s) => (
+                    <Link color="textPrimary" underline="none" href={s.href}>
+                      <MenuItem>{s.title}</MenuItem>
+                    </Link>
+                  ))}
+                </Box>
+              </Drawer>
+            </Box>
+
             <Box sx={{ display: { xs: "none", md: "flex", gap: 25 } }}>
               {shortcuts.map((s) => (
                 <Button
                   variant="text"
                   color="info"
                   size="small"
+                  href={s.href}
                   sx={{ minWidth: 0 }}
                 >
                   {s.title}
                 </Button>
               ))}
             </Box>
-          </Box>
-
-          <Button
-            color="success"
-            variant="contained"
-            size="small"
-            sx={{ minWidth: 150 }}
-          >
-            Donate
-          </Button>
-
-          <Box sx={{ display: { sm: "flex", md: "none" } }}>
-            <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
-              <MenuIcon />
-            </IconButton>
-            <Drawer anchor="top" open={open} onClose={toggleDrawer(false)}>
-              <Box sx={{ p: 2, backgroundColor: "background.default" }}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <IconButton onClick={toggleDrawer(false)}>
-                    <CloseRoundedIcon />
-                  </IconButton>
-                </Box>
-                <Divider sx={{ my: 3 }} />
-                {shortcuts.map((s) => (
-                  <MenuItem>{s.title}</MenuItem>
-                ))}
-
-                <MenuItem>
-                  <Button color="secondary" variant="contained" fullWidth>
-                    Donate
-                  </Button>
-                </MenuItem>
-              </Box>
-            </Drawer>
+            <Button
+              color="success"
+              variant="contained"
+              size="small"
+              sx={{
+                minWidth: 150,
+              }}
+            >
+              Donate
+            </Button>
           </Box>
         </StyledToolbar>
       </Container>

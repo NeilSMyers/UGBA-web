@@ -27,7 +27,7 @@ export default function Hero() {
           flexDirection: "column",
           alignItems: "center",
           pt: { xs: 14, sm: 20 },
-          pb: { xs: 8, sm: 12 },
+          pb: { xs: 6, sm: 8 },
         }}
       >
         <Stack
@@ -61,15 +61,26 @@ export default function Hero() {
             <Typography
               component="span"
               variant="h1"
-              sx={(theme) => ({
-                fontSize: "inherit",
-                color: "primary.main",
-                ...theme.applyStyles("dark", {
-                  color: "primary.light",
-                }),
-              })}
+              sx={{
+                flexDirection: { xs: "column", sm: "row" },
+                alignItems: "center",
+                fontSize: "clamp(3rem, 10vw, 3.5rem)",
+                color: "primary.light",
+              }}
             >
-              Baseball Association
+              Baseball&nbsp;
+            </Typography>
+            <Typography
+              component="span"
+              variant="h1"
+              sx={{
+                flexDirection: { xs: "column", sm: "row" },
+                alignItems: "center",
+                fontSize: "clamp(3rem, 10vw, 3.5rem)",
+                color: "primary.light",
+              }}
+            >
+              Association
             </Typography>
           </Typography>
           <Typography
@@ -86,6 +97,7 @@ export default function Hero() {
           </Typography>
 
           <Button
+            id="timeline"
             href="https://forms.gle/HcJWpNe8WtLzkaFC7"
             target="_blank"
             variant="contained"

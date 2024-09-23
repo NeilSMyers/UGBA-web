@@ -36,8 +36,7 @@ export default function Ambassador() {
     <Box
       id="ambassador"
       sx={{
-        pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
+        py: { xs: 4, sm: 12 },
         color: "white",
         bgcolor: "grey.900",
       }}
@@ -96,7 +95,7 @@ export default function Ambassador() {
           ))}
         </Grid>
         <Button variant="contained" href={ambassadorAppLink} target="_blank">
-          Become a UGBA Ambassador Today
+          Become a UGBA Ambassador
         </Button>
       </Container>
     </Box>

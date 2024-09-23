@@ -47,7 +47,10 @@ const itemData = [
 
 export default function OurTeam() {
   return (
-    <Container id="ourteam" sx={{ py: { xs: 8, sm: 16 } }}>
+    <Container
+      id="ourteam"
+      sx={{ pb: { xs: 4, sm: 12 }, pt: { xs: 2, sm: 8 } }}
+    >
       <Box sx={{ width: { sm: "100%", md: "60%" } }}>
         <Typography
           component="h2"
