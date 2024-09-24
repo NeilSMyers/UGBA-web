@@ -35,7 +35,7 @@ const nodes = [
     date: "Winter '24 / '25",
     event: "School Clinics",
     description:
-      "Instruction / practices at local schools for face-to-face training (contact us if you want an event at your school)",
+      "Instruction / practices at local schools for face-to-face training and in-person recruiting (contact us if you want an event at your school)",
     icon: <School />,
   },
   {
@@ -69,10 +69,14 @@ export default function CustomTimeline() {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector
-                sx={{ bgcolor: i ? "white" : "transparent" }}
+                sx={{ bgcolor: i ? "secondary" : "transparent" }}
               />
               <TimelineDot color="success">{n.icon}</TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector
+                sx={{
+                  bgcolor: i === nodes.length - 1 ? "transparent" : "secondary",
+                }}
+              />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span" color="primary">
