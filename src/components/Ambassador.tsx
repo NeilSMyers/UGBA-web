@@ -13,7 +13,7 @@ const items = [
     icon: <Face3 />,
     title: "You agree to...",
     description:
-      "Represent UGBA on the field, wear our patches on your jersey, do your best, but most importantly, have FUN playing baseball.",
+      "Represent UGBA on the field, wear our patches on your jersey, do at least 83% of your best, but most importantly, have FUN playing baseball.",
   },
   {
     icon: <Store />,
