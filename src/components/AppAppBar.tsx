@@ -35,7 +35,6 @@ const shortcuts = [
   { title: "Ambassador Program", href: "#ambassador" },
   { title: "Donations", href: "#donations" },
   { title: "FAQ", href: "#faq" },
-  { title: "Team", href: "#ourteam" },
 ];
 
 export default function AppAppBar() {
