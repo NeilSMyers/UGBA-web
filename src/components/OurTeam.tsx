@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Card, CardContent, Divider, Grid2 as Grid } from "@mui/material";
 
 // @ts-expect-error
-import neil from "../images/neil.jpg";
+import neil from "../images/neil.png";
 // @ts-expect-error
 import haihan from "../images/haihan.png";
 // @ts-expect-error
@@ -20,14 +20,14 @@ const itemData = [
     name: "Neil Myers",
     title: "Executive Director",
     description:
-      "A deep love of baseball and a strong desire to give girls a safe and accepting path into baseball. Neil's vision keeps us all pointed in the same direction.",
+      "A deep love of baseball and a strong desire to give girls a safe and accepting path into it. Neil's vision keeps us all pointed in the same direction.",
   },
   {
     img: haihan,
-    name: "Dr Haihan Lin",
+    name: "Haihan Lin, PhD",
     title: "Director of Logistics",
     description:
-      "A PhD in Computer Science, and an amazing logistical, creative mind. Haihan keeps our costs down, our plans straight forward, and our iteneraries followed.",
+      "A PhD in Computer Science, and an amazing logistical, creative mind. Dr Lin keeps our costs down, our plans straight forward, and our iteneraries followed.",
   },
   {
     img: derek,

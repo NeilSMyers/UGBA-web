@@ -43,7 +43,11 @@ export default function Footer() {
         }}
       >
         <div>
-          <Typography variant="h6" color="text.primary">
+          <Typography
+            variant="h6"
+            sx={{ fontSize: { xs: 13, sm: 15, md: 17 } }}
+            color="text.primary"
+          >
             utahgirlsbaseball@gmail.com
           </Typography>
           <Copyright />
