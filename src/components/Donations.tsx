@@ -48,6 +48,8 @@ const tiers = [
   },
 ];
 
+const donationLink = "https://givebutter.com/rve6tP";
+
 export default function Donations() {
   return (
     <Container
@@ -133,6 +135,8 @@ export default function Donations() {
                   fullWidth
                   variant={tier.buttonVariant as "outlined" | "contained"}
                   color={tier.buttonColor as "primary" | "secondary"}
+                  href={donationLink}
+                  target="_blank"
                 >
                   {tier.buttonText}
                 </Button>

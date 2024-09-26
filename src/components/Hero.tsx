@@ -104,7 +104,7 @@ export default function Hero() {
             size="large"
             color="secondary"
           >
-            Become a Member
+            Join the Mailing List
           </Button>
         </Stack>
       </Container>

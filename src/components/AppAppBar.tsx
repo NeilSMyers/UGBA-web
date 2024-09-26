@@ -112,6 +112,8 @@ export default function AppAppBar() {
               sx={{
                 minWidth: 150,
               }}
+              href="https://givebutter.com/rve6tP"
+              target="_blank"
             >
               Donate
             </Button>
