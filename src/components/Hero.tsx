@@ -90,8 +90,8 @@ export default function Hero() {
               width: { sm: "100%", md: "80%" },
             }}
           >
-            Non-profit organization focused on getting girls all over Utah
-            involved in baseball.
+            Non-profit organization dedicated to creating opportunities all over
+            Utah for girls to get involved in baseball
             <br />
             Show 'em what it really means to play ball like a girl!
           </Typography>
