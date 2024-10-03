@@ -25,7 +25,7 @@ const itemData = [
   {
     img: haihan,
     name: "Haihan Lin, PhD",
-    title: "Director of Logistics",
+    title: "Director of Operations",
     description:
       "A PhD in Computer Science, and an amazing logistical, creative mind. Dr Lin keeps our costs down, our plans straight forward, and our iteneraries followed.",
   },
