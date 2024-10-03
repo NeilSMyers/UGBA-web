@@ -71,7 +71,7 @@ export default function FAQ() {
               reservations, ambassador activities.
               <br />
               <br />
-              Our Director of Logistics is a deal finding fiend and will always
+              Our Director of Operations is a deal finding fiend and will always
               make sure we're getting the best value on every purchase.
               <br />
               <br />
