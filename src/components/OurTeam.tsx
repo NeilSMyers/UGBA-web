@@ -27,14 +27,14 @@ const itemData = [
     name: "Haihan Lin, PhD",
     title: "Director of Operations",
     description:
-      "A PhD in Computer Science, and an amazing logistical, creative mind. Dr Lin keeps our costs down, our plans straight forward, and our iteneraries followed.",
+      "A PhD in Computer Science, and an amazing logistical, creative mind. Dr Lin keeps our costs down, our plans straight forward, and everything organized.",
   },
   {
     img: derek,
     name: "Derek Sorensen",
     title: "Director of Sports Psychology",
     description:
-      "A BS in Psychology, MS in Sport Psychology, and a passion for athlete wellbeing. Derek uses the most modern practices to make sure we keep baseball fun.",
+      "A BS in Psychology, MS in Sport Psychology, and a passion for youth sports. Derek ensures we employ modern peer reviewed studies to keep baseball fun.",
   },
   {
     img: alysha,
