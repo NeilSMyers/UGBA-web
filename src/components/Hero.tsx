@@ -4,22 +4,19 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { Link } from "@mui/material";
 
 export default function Hero() {
   return (
     <Box
       id="hero"
-      sx={(theme) => ({
+      sx={{
         width: "100%",
         backgroundRepeat: "no-repeat",
         backgroundColor: "Background",
         backgroundImage:
-          "radial-gradient(ellipse 80% 100% at 50% -20%, hsl(210, 100%, 90%), transparent)",
-        ...theme.applyStyles("dark", {
-          backgroundImage:
-            "radial-gradient(ellipse 80% 100% at 50% -20%, hsl(210, 100%, 16%), transparent)",
-        }),
-      })}
+          "radial-gradient(ellipse 80% 100% at 50% -20%, hsl(210, 100%, 16%), transparent)",
+      }}
     >
       <Container
         sx={{
@@ -87,13 +84,23 @@ export default function Hero() {
             sx={{
               textAlign: "center",
               color: "text.secondary",
-              width: { sm: "100%", md: "80%" },
+              width: "100%",
             }}
           >
             Non-profit organization dedicated to creating opportunities all over
-            Utah for girls to get involved in baseball
+            Utah for girls to play baseball.
             <br />
-            Show 'em what it really means to play ball like a girl!
+            In partnership with{" "}
+            <Link href="https://baseballforall.com/">
+              <Typography
+                sx={{
+                  display: "inline",
+                  color: "text.secondary",
+                }}
+              >
+                Baseball For All
+              </Typography>
+            </Link>
           </Typography>
 
           <Button

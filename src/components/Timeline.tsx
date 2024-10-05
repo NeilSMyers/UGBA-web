@@ -7,7 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Container, Link } from "@mui/material";
 import {
   BatteryCharging80,
   Bolt,
@@ -47,10 +47,11 @@ const nodes = [
   },
   {
     date: "Summer 2025",
-    event: "Ambassador Success",
+    event: "Baseball For All Nationals",
     description:
-      "Building Relationships with our ambassadors so they can attend summer camps or get the training they want. We'll also continue other activities and trainings based on player sentiment",
+      'BFA is holding nationals in Sparks, NV. We have the perfect opportunity for our first All-Star team, the "Utah Foxes"',
     icon: <SportsBaseball />,
+    href: "https://baseballforall.com/nationals/",
   },
 ];
 
@@ -78,10 +79,19 @@ export default function CustomTimeline() {
                 }}
               />
             </TimelineSeparator>
+
             <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span" color="primary">
-                {n.event}
-              </Typography>
+              {n.href ? (
+                <Link href={n.href} target="_blank">
+                  <Typography variant="h6" component="span" color="primary">
+                    {n.event}
+                  </Typography>
+                </Link>
+              ) : (
+                <Typography variant="h6" component="span" color="primary">
+                  {n.event}
+                </Typography>
+              )}
               <Typography color="secondary">{n.description}</Typography>
             </TimelineContent>
           </TimelineItem>
