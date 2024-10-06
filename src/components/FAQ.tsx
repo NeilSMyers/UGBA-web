@@ -129,7 +129,6 @@ export default function FAQ() {
               "Volunteer" and the following information:
               <List>
                 {[
-                  "Membership Card",
                   "What you want to help with",
                   "Special Skills",
                   "Resume or LinkedIn Profile",
@@ -165,12 +164,12 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              We only plan on offering playing opportunities for 18U. <br />
-              <br /> However, we will always need women to be coaches and
-              umpires. Your example will be very important to younger girls!
+              We also have a women's team that will participate in the Utah
+              Adult Amateur League. Contact us for more information or if you'd
+              like to join!
               <br />
-              <br />
-              Stay tuned for future plans around these ideas.
+              <br /> We also will always need women to be coaches and umpires.
+              Your example will be very important to younger girls!
             </Typography>
           </AccordionDetails>
         </Accordion>
