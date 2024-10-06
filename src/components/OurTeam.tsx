@@ -32,7 +32,7 @@ const itemData = [
   {
     img: derek,
     name: "Derek Sorensen",
-    title: "Director of Sports Psychology",
+    title: "Mental Performance Coach",
     description:
       "A BS in Psychology, MS in Sport Psychology, and a passion for youth sports. Derek ensures we employ modern peer reviewed studies to keep baseball fun.",
   },
