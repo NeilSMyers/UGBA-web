@@ -94,9 +94,6 @@ export default function Ambassador() {
             </Grid>
           ))}
         </Grid>
-        <Button variant="contained" href={ambassadorAppLink} target="_blank">
-          Become a UGBA Ambassador
-        </Button>
       </Container>
     </Box>
   );

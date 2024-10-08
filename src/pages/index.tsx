@@ -17,25 +17,21 @@ const IndexPage: React.FC<PageProps> = () => {
   const defaultTheme = createTheme({ palette: { mode: "dark" } });
 
   return (
-    <div style={{ backgroundColor: "hsl(210, 100%, 16%)" }}>
-      <ThemeProvider theme={defaultTheme}>
-        <CssBaseline enableColorScheme />
+    <ThemeProvider theme={defaultTheme}>
+      <CssBaseline enableColorScheme />
 
-        <AppAppBar />
-        <Hero />
-        <div
-          style={{ backgroundColor: defaultTheme.palette.background.default }}
-        >
-          <Timeline />
-          <OurTeam />
-          <Ambassador />
-          <Testimonials />
-          <Donations />
-          <FAQ />
-          <Footer />
-        </div>
-      </ThemeProvider>
-    </div>
+      <AppAppBar />
+      <Hero />
+      <div style={{ backgroundColor: defaultTheme.palette.background.default }}>
+        <Timeline />
+        <OurTeam />
+        {/* <Ambassador /> */}
+        <Testimonials />
+        <Donations />
+        <FAQ />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

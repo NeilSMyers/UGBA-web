@@ -27,12 +27,10 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: "8px 12px",
 }));
 
-const linkToForm = "https://forms.gle/HcJWpNe8WtLzkaFC7";
-
 const shortcuts = [
   { title: "Timeline", href: "#timeline" },
   { title: "Our Team", href: "#ourteam" },
-  { title: "Ambassador Program", href: "#ambassador" },
+  // { title: "Ambassador Program", href: "#ambassador" },
   { title: "Donations", href: "#donations" },
   { title: "FAQ", href: "#faq" },
 ];

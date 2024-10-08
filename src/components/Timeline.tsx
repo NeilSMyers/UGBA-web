@@ -26,9 +26,9 @@ const nodes = [
   },
   {
     date: "December 2024",
-    event: "First Activity",
+    event: "First Team",
     description:
-      "Initial gathering at a local batting cage so we can meet, answer questions, make sure everyone has the equipment they need, and have some fun",
+      "We're currently gathering players for a 12U team to play in winter tournaments in St. George. Let us know if you're interested!",
     icon: <Celebration />,
   },
   {
@@ -40,9 +40,9 @@ const nodes = [
   },
   {
     date: "Spring 2025",
-    event: "First League",
+    event: "First League?",
     description:
-      "Depending on our recruiting success, we'll be able to run our first league! We're focusing on high school and coach pitch age groups. We'll do our best to not interfere with existing leagues, including softball. If we aren't able to form enough teams to play, we'll also offer sponsorship to play in you local leagues",
+      "Depending on our recruiting success, we'll be able to run our first league! At the very least we'll be sponsoring a team of girls in a local rec or travel league",
     icon: <Bolt />,
   },
   {

@@ -87,8 +87,8 @@ export default function Hero() {
               width: "100%",
             }}
           >
-            Non-profit organization dedicated to creating opportunities all over
-            Utah for girls to play baseball.
+            Non-profit organization creating opportunities for girls all over
+            Utah to play baseball.
             <br />
             In partnership with{" "}
             <Link href="https://baseballforall.com/">

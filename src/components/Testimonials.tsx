@@ -60,9 +60,8 @@ export default function Testimonials() {
           People are excited!
         </Typography>
         <Typography variant="body1" sx={{ color: "text.secondary" }}>
-          We've been met with a lot of confusion as to why there aren't girls
-          baseball leagues already. Slowly building a fan and player base the
-          more people we meet.
+          Things are moving and changing fast. Join the mailing list so we can
+          keep you up to date!
         </Typography>
       </Box>
       <Grid container spacing={2}>
