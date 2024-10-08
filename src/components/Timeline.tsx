@@ -49,7 +49,7 @@ const nodes = [
     date: "Summer 2025",
     event: "Baseball For All Nationals",
     description:
-      'BFA is holding nationals in Sparks, NV. We have the perfect opportunity for our first All-Star team, the "Utah Foxes"',
+      'BFA is holding nationals in Sparks, NV. We have the perfect opportunity for our first National team"',
     icon: <SportsBaseball />,
     href: "https://baseballforall.com/nationals/",
   },
