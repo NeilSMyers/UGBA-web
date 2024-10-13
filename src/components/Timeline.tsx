@@ -33,9 +33,9 @@ const nodes = [
   },
   {
     date: "Winter '24 / '25",
-    event: "School Clinics",
+    event: "Clinics / Training",
     description:
-      "Instruction / practices at local schools for face-to-face training and in-person recruiting (contact us if you want an event at your school)",
+      "Instruction / practices at local SLC facilities. Trainers will include members of the U of U softball team that grew up playing baseball!",
     icon: <School />,
   },
   {
