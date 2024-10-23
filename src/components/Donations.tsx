@@ -48,7 +48,8 @@ const tiers = [
   },
 ];
 
-const donationLink = "https://givebutter.com/rve6tP";
+const donationLink =
+  "https://www.zeffy.com/donation-form/cb153865-def9-4ffd-bf3c-26745e20b032";
 
 export default function Donations() {
   return (

@@ -110,7 +110,7 @@ export default function AppAppBar() {
               sx={{
                 minWidth: 150,
               }}
-              href="https://givebutter.com/rve6tP"
+              href="https://www.zeffy.com/donation-form/cb153865-def9-4ffd-bf3c-26745e20b032"
               target="_blank"
             >
               Donate
