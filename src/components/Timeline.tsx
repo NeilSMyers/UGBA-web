@@ -27,7 +27,7 @@ const nodes = [
     date: "Spring 2025",
     event: "First Team",
     description:
-      "All girls rec league team in the Saratoga Springs / Eagle Mountain area. Let us know if you're interested in playing!",
+      "All girls rec league team in the norther Utah Valley area. Let us know if you're interested in playing!",
     icon: <Celebration />,
   },
   {
