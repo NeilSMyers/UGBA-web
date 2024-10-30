@@ -18,40 +18,32 @@ import {
 
 const nodes = [
   {
-    date: "Fall 2024",
+    date: "Winter 2024",
     event: "Recruit & Gather",
-    description:
-      "Marketing, recruiting, organizing, forming an identity, and paperwork",
+    description: "Marketing, recruiting, organizing, and forming an identity.",
     icon: <BatteryCharging80 />,
   },
   {
-    date: "December 2024",
+    date: "Spring 2025",
     event: "First Team",
     description:
-      "We're currently gathering players for a 12U team to play in winter tournaments in St. George. Let us know if you're interested!",
+      "All girls rec league team in the Saratoga Springs / Eagle Mountain area. Let us know if you're interested in playing!",
     icon: <Celebration />,
-  },
-  {
-    date: "Winter '24 / '25",
-    event: "Clinics / Training",
-    description:
-      "Instruction / practices at local SLC facilities. Trainers will include members of the U of U softball team that grew up playing baseball!",
-    icon: <School />,
-  },
-  {
-    date: "Spring 2025",
-    event: "First League?",
-    description:
-      "Depending on our recruiting success, we'll be able to run our first league! At the very least we'll be sponsoring a team of girls in a local rec or travel league",
-    icon: <Bolt />,
   },
   {
     date: "Summer 2025",
     event: "Baseball For All Nationals",
     description:
-      "BFA is holding nationals in Sparks, NV. We have the perfect opportunity for our first National team",
+      "BFA is holding nationals in Sparks, NV. Though taking our own team seems unlikely this year, it's always good to look forward.",
     icon: <SportsBaseball />,
     href: "https://baseballforall.com/nationals/",
+  },
+  {
+    date: "Fall 2025",
+    event: "Fall Ball Team",
+    description:
+      "Start gathering more competitive teams with our eyes on BFA tournaments going forward.",
+    icon: <Bolt />,
   },
 ];
 
