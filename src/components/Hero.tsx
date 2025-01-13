@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
+import { instagram } from "../constants";
 
 export default function Hero() {
   return (
@@ -105,13 +106,17 @@ export default function Hero() {
 
           <Button
             id="timeline"
-            href="https://forms.gle/HcJWpNe8WtLzkaFC7"
+            href={instagram}
             target="_blank"
             variant="contained"
             size="large"
-            color="secondary"
+            color="inherit"
+            style={{
+              background:
+                "radial-gradient(circle farthest-side at 0% 0%, #833ab4 15%, #fd1d1d 80%, #fcb045)",
+            }}
           >
-            Join the Mailing List
+            Follow us on Instagram
           </Button>
         </Stack>
       </Container>

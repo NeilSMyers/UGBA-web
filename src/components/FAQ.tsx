@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { ArrowRight } from "@mui/icons-material";
+import { instagram } from "../constants";
 
 export default function FAQ() {
   const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -99,7 +100,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              Absolutely! Email us at <Link> utahgirlsbaseball@gmail.com </Link>{" "}
+              Absolutely! DM us on{" "}
+              <Link href={instagram} target="_blank">
+                Instagram
+              </Link>{" "}
               and we'll set up a time for dropoff! <br />
               <br /> We'll use what we can and refurbish what we need.
             </Typography>
@@ -124,9 +128,11 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              Make sure you're a member first! Then send an email to{" "}
-              <Link> utahgirlsbaseball@gmail.com </Link> with the subject line
-              "Volunteer" and the following information:
+              Follow and DM us on{" "}
+              <Link href={instagram} target="_blank">
+                Instagram
+              </Link>{" "}
+              with the following information:
               <List>
                 {[
                   "What you want to help with",
@@ -164,9 +170,10 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: "100%", md: "70%" } }}
             >
-              We also have a women's team that will participate in the Utah
-              Adult Amateur League. Contact us for more information or if you'd
-              like to join!
+              We'll be hosting regular sandlot games so anyone can play!
+              <br />
+              We'll be forming a women's team that will participate in a local
+              adult league.
               <br />
               <br /> We also will always need women to be coaches and umpires.
               Your example will be very important to younger girls!
