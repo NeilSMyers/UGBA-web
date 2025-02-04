@@ -8,33 +8,21 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import { Container, Link } from "@mui/material";
-import {
-  BatteryCharging80,
-  Bolt,
-  Celebration,
-  School,
-  SportsBaseball,
-} from "@mui/icons-material";
+import { Bolt, Celebration, SportsBaseball } from "@mui/icons-material";
 
 const nodes = [
   {
-    date: "Winter 2024",
-    event: "Recruit & Gather",
-    description: "Marketing, recruiting, organizing, and forming an identity.",
-    icon: <BatteryCharging80 />,
-  },
-  {
     date: "Spring 2025",
-    event: "First Team",
+    event: "Sandlot",
     description:
-      "All girls rec league team in the northern Utah Valley area. Let us know if you're interested in playing! We'll also be hosting regular sandlot games.",
+      "We have plans to play 'pick up' baseball games, if only to give people some time to play!",
     icon: <Celebration />,
   },
   {
     date: "Summer 2025",
     event: "Baseball For All Nationals",
     description:
-      "BFA is holding nationals in Sparks, NV. Though taking our own team seems unlikely this year, it's always good to look forward.",
+      "BFA is holding nationals in Sparks, NV. Get your tickets if you want to go watch! One day we'll get a team there.",
     icon: <SportsBaseball />,
     href: "https://baseballforall.com/nationals/",
   },
@@ -42,7 +30,7 @@ const nodes = [
     date: "Fall 2025",
     event: "Fall Ball Team",
     description:
-      "Start gathering more competitive teams with our eyes on BFA tournaments going forward.",
+      "If we can drum up enough noise, we'll put together a team for fall ball.",
     icon: <Bolt />,
   },
 ];
