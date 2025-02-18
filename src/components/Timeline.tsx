@@ -10,29 +10,29 @@ import Typography from "@mui/material/Typography";
 import { Container, Link } from "@mui/material";
 import { Bolt, Celebration, SportsBaseball } from "@mui/icons-material";
 
-const nodes = [
-  {
-    date: "Spring 2025",
-    event: "Sandlot",
-    description:
-      "We have plans to play 'pick up' baseball games, if only to give people some time to play!",
-    icon: <Celebration />,
-  },
-  {
-    date: "Summer 2025",
-    event: "Baseball For All Nationals",
-    description:
-      "BFA is holding nationals in Sparks, NV. Get your tickets if you want to go watch! One day we'll get a team there.",
-    icon: <SportsBaseball />,
-    href: "https://baseballforall.com/nationals/",
-  },
-  {
-    date: "Fall 2025",
-    event: "Fall Ball Team",
-    description:
-      "If we can drum up enough noise, we'll put together a team for fall ball.",
-    icon: <Bolt />,
-  },
+const nodes: any[] = [
+  // {
+  //   date: "Spring 2025",
+  //   event: "Sandlot",
+  //   description:
+  //     "We have plans to play 'pick up' baseball games, if only to give people some time to play!",
+  //   icon: <Celebration />,
+  // },
+  // {
+  //   date: "Summer 2025",
+  //   event: "Baseball For All Nationals",
+  //   description:
+  //     "BFA is holding nationals in Sparks, NV. Get your tickets if you want to go watch! One day we'll get a team there.",
+  //   icon: <SportsBaseball />,
+  //   href: "https://baseballforall.com/nationals/",
+  // },
+  // {
+  //   date: "Fall 2025",
+  //   event: "Fall Ball Team",
+  //   description:
+  //     "If we can drum up enough noise, we'll put together a team for fall ball.",
+  //   icon: <Bolt />,
+  // },
 ];
 
 export default function CustomTimeline() {
